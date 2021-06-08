@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html manifest="APRENDISAJE.appcache">
+
+<head>
+	
+	<title>EJEMPLO DE APRENDISAJE</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<meta charset="utf-8">
+	<meta name="application-name" content="Ejercicios y prácticas 1.0">
+	<meta name="keywords" content="ejercicios, practicas, programcion, html,etc.">
+	<base href="https://www.youtube.com/watch?v=X79ncLM1Gwo&pbjreload=101" target="_blank">
+</head>
+<body bgcolor="white" text="red">
+	<p>Este es el dia que me enojo, no se porque</p>
+	<p> mi <b>vida</b> es complicado <strong>pero</strong> hola</p>
+	<p>hola <em>como estamos</em> hello HI</p>
+	<p>ayí</p>
+	<a href="https://www.youtube.com/watch?v=X79ncLM1Gwo&pbjreload=101">hola</a>
+	<a href="page2.html">página2</a>
+	<hr />
+	<p><mark>hola como estamos en<wbr>-este presiso momento<wbr> xd</mark></p>
+		<p>visitenos en <del cite="https://www.youtube.com/watch?v=X79ncLM1Gwo&pbjreload=101">www.aprendoencasa.com</del></p>
+		<p>la siguiete palabra <abbr title="objeto volante no identificado xd">OVNI</abbr>es una avreviatura</p>
+		<p>enlace al buscador <a href="https://mega.nz/file/kctBhCqb#XUlHVIPlW2lDEgQFgZMl_GQAQFYi5i9y06gvISgddLo" tabindex="1">google</a></p>
+		<p>hola como estan chamos <a href="https://www.youtube.com/watch?v=X79ncLM1Gwo&spbjreload=101" tabindex="2">bing</a></p>
+		<p>enlace a <a href="https://www.youtube.com/watch?v=X79ncLM1Gwo&pbjreload=101" tabindex="3">aprendo com</a></p>
+		<p title="parrafo con informacion adicional"><a href="https://www.youtube.com/watch?v=X79ncLM1Gwo&pbjreload=101" title="ESTUDIOS ONLINE">yomequedoencasa</a></p>
+
+		<form action="graba_datos.php" method="post" enctype="multipart/form-data">   Nombre: <input type="text" name="nombre"><br> 
+  Direccion: <input type="text" name="direccion"><br> 
+  Fotografía: <input type="file" name="fotografia" accept=”image/*”><br> 
+  <input type="submit" value="Enviar" name="enviar"> 
+</form> 
+
+
+<form action="enviar.php" autocomplete="on"> 
+Nombre: <input type="text" name="nombre"><br> 
+Apellidos: <input type="text" name="apellidos" autofocus><br> 
+Vehículo:<br> 
+<input type="checkbox" name="vehiculo" value="Bicicleta"> Bicicleta<br> 
+<input type="checkbox" name="vehiculo" value="Coche" checked> Coche<br> 
+<input type="submit" name="enviar" value="enviar"> 
+</form> 
+
+
+
+
+<form action="enviar.php" autocomplete="on" id="formulario1" name="formulario1" method="get"> 
+Nombre: <input type="text" name="nombre" form="formulario1"><br> 
+Apellidos: <input type="text" name="apellidos" form="formulario1"><br> 
+<input type="submit" name="enviar" value="enviar" form="formulario1"> </form> 
+<br> 
+Teléfono: <input type="text" name="telefono" form="formulario1"> <br> 
+
+
+
+
+<form action="envio.php" method="get" id="formulario1" > 
+Nombre: <input type="text" name="nombre"><br> 
+DNI: <input type="text" name="apellidos"><br> 
+Usuario: <input type="text" name="usuario"><br> 
+Password: <input type="password" name="contrasena"><br> 
+<input type="submit" value="Enviar" /> 
+<input type="submit" formaction="envio_admin.php" formmethod="post" value="Enviar Administración"> 
+</form> 
+
+<br>
+
+<script> 
+function Activar() { 
+    
+document.getElementById("marca").readOnly=!document.getElementById("marca").rea dOnly; 
+} 
+</script> 
+<form action="envio.php" method="get" id="formulario1" target="_self"> 
+Nombre: <input type="text" name="nombre"><br> 
+Fecha Nacimiento: <input type="date" name="fecha_nacimiento"><br> 
+Vehículo: <input type="checkbox" name="vehiculo" onclick="Activar()"><br> 
+Marca: <input type="text" name="marca" readonly id="marca"><br> 
+<input type="submit" name="enviar" value="enviar"> </form> 
+<br>
+
+<form action="envio.php" method="post" id="formulario1"> 
+Nombre: <input type="text" name="nombre"><br> 
+Apellidos: <input type="text" name="apellidos"> <br/> 
+Valoración: <input type="range" min="1" max="10" step="1" name="valoracion" value="5"><br> 
+<input type="submit" name="enviar" value="enviar"> 
+ <input type="reset" name="limpiar" value="limpiar formulario"> </form> 
+<br>
+
+<form name="formulario_datos" id="formulario_datos" action="envio.php" method="get" > 
+    <fieldset form="formulario_datos" name="grupo_datos_personales">         <legend> Datos Personales </legend> 
+        <label for="nombre" form="formulario_datos">Nombre: </label> 
+        <input type="text" name="nombre" id="nombre" value="" placeholder="Teclee nombre..."><br> 
+        <label for="localidad" form="formulario_datos">Localidad: </label> 
+        <input type="text" name="telefono" id="localidad" value="" placeholder="Teclee telefono..."><br> 
+    </fieldset> 
+    <br> Comentarios... <br> 
+    <textarea name="comentarios" rows="7" cols="70" placeholder="Teclee sus comentarios..."></textarea> 
+    <input type="submit" name="enviar" value="Enviar Datos..."> 
+</form>
+
+
+</body>
+
+
+</html>
